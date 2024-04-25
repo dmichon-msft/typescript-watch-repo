@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "Node10",
+        "module": "ESNext",
+        "declaration": true,
+        "declarationMap": true,
+        "outDir": "lib"
+    },
+
+    "include": ["src/**/*.ts"]
+}

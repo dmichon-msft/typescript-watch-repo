@@ -1,0 +1,10 @@
+{
+    "name": "a",
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "latest"
+    },
+    "types": "./lib/index.d.ts"
+}
