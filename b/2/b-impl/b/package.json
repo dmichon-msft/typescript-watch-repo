@@ -1,12 +1,15 @@
 {
     "name": "b",
     "scripts": {
-        "build": "tsc"
+        "build": "node ./node_modules/ts-latest/lib/tsc.js",
+        "repro-5.0": "node ./node_modules/ts-5.0/lib/tsc.js --watch --extendedDiagnostics",
+        "repro-latest": "node ./node_modules/ts-latest/lib/tsc.js --watch --extendedDiagnostics"
     },
     "dependencies": {
         "a": "workspace:*"
     },
     "devDependencies": {
-        "typescript": "latest"
+        "ts-5.0": "npm:typescript@~5.0.0",
+        "ts-latest": "npm:typescript@latest"
     }
 }

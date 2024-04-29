@@ -6,9 +6,16 @@ Repro steps:
 ```
 npm install -g pnpm
 pnpm -r install
+
+# This will take a while since it creates 111110 empty folders.
 pnpm -r build
 cd b/2/b-impl/b
-./node_modules/.bin/tsc --watch --extendedDiagnostics
+
+# This succeeds and enters watch state
+pnpm run repro-5.0
+
+# This throws `ENOSPC`
+pnpm run repro-latest
 ```
 
 Observe the line:

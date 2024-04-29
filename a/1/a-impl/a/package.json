@@ -1,7 +1,7 @@
 {
     "name": "a",
     "scripts": {
-        "build": "tsc"
+        "build": "tsc && node ./createJunk.js"
     },
     "devDependencies": {
         "typescript": "latest"
